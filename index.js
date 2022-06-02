@@ -43,7 +43,7 @@ app.use(
   managerRoutes
 );
 
-const dbURI = "mongodb://localhost:27017/webprosjekt";
+const dbURI = "mongodb+srv://Knutsanl:<password>@cluster0.23j8yvj.mongodb.net/?retryWrites=true&w=majority";
 // DATABASE
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
