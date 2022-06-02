@@ -6,9 +6,8 @@
   "scripts": {
  
       
-      "heroku-postbuild": "cd FRONTEND && npm install && npm run build",
-      "server": "node index.js",
-      "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix FRONTEND\""
+    "start": "node index.js",
+    "heroku-postbuild": "cd FRONTEND && npm install --only=dev && npm install && npm run build"
 
   },
  
