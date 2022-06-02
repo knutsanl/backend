@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "608986464c5ebc1ad4e09371"
+  },
+  "email": "rolfa@email.com",
+  "userID": 3,
+  "password": "$2b$10$h2k2JGxEY.s/LcLUjnOLpehTY7yNos26XrtBA4wKRISirVPCN9L9G",
+  "fullName": "Rolf Arne",
+  "role": "gardener",
+  "place": "A135",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60898726efed4d4754f531ae"
+  },
+  "email": "manager@email.com",
+  "userID": 1,
+  "password": "$2b$10$gefbWDV4vHLkauGEMmQSbOTfOey8r6SPFuWfLKmfPG7XkY99wkirq",
+  "fullName": "Manager",
+  "role": "manager",
+  "place": "S423",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60898cc38da30848d4254b05"
+  },
+  "email": "gardener@email.com",
+  "userID": 2,
+  "password": "$2b$10$yukSyNf0QBGmlexsnWYSveN3qA1aay8cZzrx/u4Zb5L6OJTIstxOi",
+  "fullName": "Gardener",
+  "role": "gardener",
+  "place": "Mustad",
+  "__v": 0
+}]
