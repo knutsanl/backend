@@ -6,11 +6,10 @@
   "scripts": {
  
       
-      "heroku-postbuild": "npm run install-client && npm run build",
+      "heroku-postbuild": "cd FRONTEND && npm install && npm run build",
       "server": "node index.js",
-      "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
-      "build": "cd FRONTEND && npm run build",
-      "install-client": "cd FRONTEND && npm install"
+      "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix FRONTEND\""
+   
   },
  
   "author": "",
