@@ -6,9 +6,11 @@
   "scripts": {
  
       
-      "heroku-postbuild": "npm install",
+      "heroku-postbuild": "npm run install-client && npm run build",
       "server": "node index.js",
-      "start": "node index.js"
+      "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+      "build": "cd FRONTEND && npm run build",
+      "install-client": "cd FRONTEND && npm install"
   },
  
   "author": "",
@@ -22,5 +24,6 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0"
+    
   }
 }
